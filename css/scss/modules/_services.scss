@@ -1,0 +1,52 @@
+.services {
+  background: $gray;
+  &__wrapp {    
+    padding-bottom: 50px;
+  } 
+  &__wrapp--header {
+    padding: 45px 0 55px;
+    color: $white;
+    font-size: 24px;
+    line-height: 20px;
+    @include font-family($um);
+  }
+  &__item {
+    float: left;
+    max-width: 260px;
+    width: 100%;
+    margin-right: 40px;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover .services__item--image-h {
+      opacity: 0.8;
+    }
+    &:hover .services__item--pic-caption {
+      color: $gold;
+    }
+  }
+  &__item--pic {
+    position: relative;
+  }
+  &__item--image {
+  }
+  &__item--image-h {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+  }
+  &__item--pic-caption {
+    display: block;
+    margin-top: 35px;
+    color: $white;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    text-align: center;
+    @include font-family($um);
+  }
+}
